@@ -1,3 +1,4 @@
 build:
 	cp -r ../../. /app
-	# Add custom build steps
+	# install semgrep
+	pip install semgrep

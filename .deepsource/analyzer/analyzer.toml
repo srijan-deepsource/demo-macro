@@ -1,3 +1,3 @@
-name = "Hackstreet Boys"
-description = "Raise my issues on deepsource"
+name = "Django smells"
+description = "My custom Django rules, written in semgrep"
 command = "python3 /app/analyze.py"

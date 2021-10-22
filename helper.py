@@ -35,7 +35,7 @@ def get_vcs_filepath(filepath):
     return filepath
 
 
-def make_issue(issue_code, issue_txt, filepath, line, col):
+def make_issue(issue_code, issue_txt, filepath, line, col, endline=None, endcol=None):
     """Prepare issue structure for the given issue data."""
     filepath = get_vcs_filepath(filepath)
     return {
@@ -49,8 +49,8 @@ def make_issue(issue_code, issue_txt, filepath, line, col):
                     "column": col
                 },
                 "end": {
-                    "line": line,
-                    "column": col
+                    "line": endline or line,
+                    "column": endcol or col
                 }
             }
         }

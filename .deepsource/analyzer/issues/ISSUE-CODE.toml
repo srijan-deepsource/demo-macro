@@ -1,7 +1,0 @@
-title = "Sample issue title"
-category = "antipattern"
-severity = "major"
-description = """
-Sample issue description.
-"""
-recommended = true

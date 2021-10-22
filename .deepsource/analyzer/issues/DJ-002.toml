@@ -1,0 +1,19 @@
+title = "Use `latest()` to fetch latest object from an ordered Queryset"
+category = "performance"
+severity = "major"
+description = """
+Consider using the `latest` or `earliest` method if you want to fetch the latest element from an ordered queryset.
+
+So, instead of
+```python
+Entry.objects.order_by('pub_date')[0]
+```
+
+You can use the above mentioned methods, which are more straightforward:
+```python
+Entry.objects.latest('pub_date')
+```
+
+Read more about `latest` here – https://docs.djangoproject.com/en/3.2/ref/models/querysets/#latest
+"""
+recommended = true

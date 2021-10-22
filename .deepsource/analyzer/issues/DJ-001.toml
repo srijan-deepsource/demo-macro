@@ -1,0 +1,9 @@
+title = "Use `count()` method"
+category = "performance"
+severity = "major"
+description = """
+A `count()` call performs a `SELECT COUNT(*)` behind the scenes, so you should always use `count()` rather than loading all of the record into Python objects and calling `len()` on the result (unless you need to load the objects into memory anyway, in which case len() will be faster).
+
+Check the doc for more reference – https://docs.djangoproject.com/en/3.2/ref/models/querysets/#count
+"""
+recommended = true

@@ -1,0 +1,13 @@
+rules:
+- id: use-count-method::DJ-001
+  message: Django provides the `count()` method which is more efficient than using `.len()` to know the number of records. See https://docs.djangoproject.com/en/3.0/ref/models/querysets/ for details.
+  languages: [python]
+  severity: ERROR
+  pattern-either:
+  - pattern: $X.objects.$FUNC(...).len()
+  - pattern: $X.objects.$FUNC(...).$FILTER().len()
+  - pattern: $X.objects.$FUNC(...).$FILTER().$UPDATE(...).len()
+  metadata:
+    category: performance
+    technology:
+    - django
