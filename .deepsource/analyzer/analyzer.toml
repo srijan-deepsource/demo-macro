@@ -1,5 +1,5 @@
 name = "Django smells"
 description = "My custom Django rules, written in semgrep"
-analysis_command = "PYTHONPATH=/toolbox/venv:$PYTHONPATH python3 /app/analyze.py"
+analysis_command = "PATH=/toolbox/venv/bin:$PATH PYTHONPATH=/toolbox/venv:$PYTHONPATH python3 /app/analyze.py"
 visibility = "public"
 category = "language"
