@@ -7,3 +7,4 @@ build:
 	ls /toolbox/venv
 	ls /toolbox/venv/bin
 	ls /toolbox
+	ls /macrocode
