@@ -16,7 +16,7 @@ app_path = os.path.dirname(os.path.abspath(__file__))
 files_to_analyze = [filename for filename in get_files(codepath) if filename.endswith(".py")]
 
 analysis_command = [
-    "semgrep",
+    "/toolbox/venv/bin/semgrep",
     "--json",
     "-o",
     resultpath,
