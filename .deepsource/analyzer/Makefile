@@ -1,6 +1,6 @@
 build:
 	cp -r ../../. /app
-	apk add py-pip
+	apk add py-pip build-base
 	# install semgrep
 	mkdir /toolbox/venv
 	pip install --target=/toolbox/venv semgrep
