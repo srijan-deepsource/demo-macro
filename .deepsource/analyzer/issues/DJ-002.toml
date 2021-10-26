@@ -17,3 +17,4 @@ Entry.objects.latest('pub_date')
 Read more about `latest` here – https://docs.djangoproject.com/en/3.2/ref/models/querysets/#latest
 """
 recommended = true
+weight = 90

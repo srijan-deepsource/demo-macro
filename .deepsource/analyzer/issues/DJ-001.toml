@@ -7,3 +7,4 @@ A `count()` call performs a `SELECT COUNT(*)` behind the scenes, so you should a
 Check the doc for more reference – https://docs.djangoproject.com/en/3.2/ref/models/querysets/#count
 """
 recommended = true
+weight = 90
